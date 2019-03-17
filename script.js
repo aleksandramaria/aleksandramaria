@@ -18,7 +18,9 @@ $(document).ready(function() {
       url: requestUrl,
       method: 'GET',
       contentType: 'application/json',
-      success: function(boards) { callback(callbackArgs, boards); }
+      success: function(boards) {
+        callback(callbackArgs, boards);
+      }
     });
   }
 
